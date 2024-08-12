@@ -2,6 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\webController;
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
+Route::get('/', [webController::class, 'home']);
