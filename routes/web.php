@@ -9,3 +9,5 @@ use App\Http\Controllers\webController;
 // });
 
 Route::get('/', [webController::class, 'home']);
+
+Route::get('/new', [webController::class, 'home1']);
